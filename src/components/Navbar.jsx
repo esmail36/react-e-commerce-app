@@ -6,6 +6,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import LocalMallIcon from "@mui/icons-material/LocalMall";
+import Header from "./Header";
 
 const Navbar = () => {
   const [data, setData] = useState(false);
@@ -21,6 +22,7 @@ const Navbar = () => {
 
   return (
     <>
+      <Header />
       <div>
         <div className="navbar_div">
           <div className={data ? "input_form" : "input_form_not"}>
